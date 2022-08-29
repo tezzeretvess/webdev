@@ -9,6 +9,9 @@
 	
 	<!--Style by using <style> tag-->
 	<style>
+		html{
+			box-sizing: border-box;
+		}
 		.main {
 			background-color: lightgray;
 			padding: 0.5em;
@@ -50,6 +53,32 @@
 		}
 
 		.boxmodel, .chichenitza {width: 260px;}
+
+		.div1 {
+			background-color: rgb(255, 255, 255);
+    		padding: 1em;
+    		border: 4px solid black;
+    		margin: 1em 30em 1em 0em;
+    		height: 15em;
+		}
+		.div2 {
+			background-color: red;
+    		border: 4px solid black;
+    		margin: 1em 0em 1em 0em;
+    		text-align: center;
+		}
+		.boxE {
+			background-color: white;
+			padding: 1em;
+			border: 4px solid black;
+			margin: 1em 30em 1em 0em;
+			
+			text-align: center;
+			
+			
+		}
+
+		
 
 	</style>
 </head>
@@ -96,6 +125,13 @@
 	
 		<h2>Exercice</h2>
 		<div>Mimic the following structure using HTML and CSS.</div>
+		
+		<div class="div1">
+			<div class="div2">
+				<p class="boxE">Webdevs love the chichenitza</p>
+			</div>	
+		</div>
+		
 		<div><img class="chichenitza" src="img/chichenitza.png"></div>
 
 		<h2>More resources</h2>

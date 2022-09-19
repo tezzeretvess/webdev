@@ -3,21 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <title>My Project</title>
-  <link rel="stylesheet" href="stylesheet.css"></link>
+  <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
+
+
+
   <div class="background">
     <div class="container">
         <h1>Quiz</h1>
         <div class="question">
             <h2>Question</h2>
+            <p></p>
         </div>
         <div class="answer">
             <div class="slidecontainer">
                 <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-            </div>
+                <input type="number" value="0" id="slideNum">
+                <button class="submit">Submit</button>
+          </div>
+            
         </div>      
     </div>
   </div>
+  <script>
+    const slider = document.querySelector(".slider")
+    const sliderNum = document.querySelector("#slideNum")
+    const submit = document.querySelector(".submit")
+
+    submitted = false
+    submit.addEventListener("input", submitPressed)
+
+    function submitPressed () {
+      submitted = true
+    }
+
+    while(!submitted) {
+
+      slider.addEventListener("input", updateNum)
+
+      function updateNum() {
+        const n = slider.value
+        sliderNum.value = n
+      }
+      sliderNum.addEventListener("input", updateSlider)
+
+      function updateSlider() {
+        const n = Number(sliderNum.value)
+        console.log(n)
+        slider.value = n
+      }
+    }
+  </script>
+
+
 </body>
 </html>
+

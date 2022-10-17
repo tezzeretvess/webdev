@@ -13,16 +13,24 @@ html{
     border: 5px;
     border-color: black;
     height: 90%;
+    border-radius: 20px;
     
 }
 h1{
     border-style: solid;
-    border-radius: 2px;
+    border-radius: 20px;
+    padding-left: 1%;
+}
+
+h2 {
+    margin:0;
 }
 .question {
     background-color: aqua;
     margin: 0.5em 1em 1em 1em;
     height: 40%;
+    border-radius: 20px;
+    padding: 1%;
 }
 
 .answer {
@@ -30,6 +38,7 @@ h1{
     margin: 2em 1em 3em 1em;
     height: 20%;
     padding: 1em 25% 1em 25%;
+    border-radius: 20px;
 }
 
 
@@ -43,6 +52,7 @@ h1{
     opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
     -webkit-transition: .2s; /* 0.2 seconds transition on hover */
     transition: opacity .2s;
+    border-radius: 20px;
 
   }
   .slider::-webkit-slider-thumb {
@@ -62,11 +72,13 @@ h1{
   }
 #slideNum {
     width: 98%;
+    border-radius: 20px;
+    padding: 0 0 0 1%;
     
 }
 
 .submit {
     margin: 1em 20% 0em 20%;
-    padding: 0% 20% 0 20%;
-    
+    padding: 2% 20% 2% 20%;
+    border-radius: 20px;
 }

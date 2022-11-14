@@ -1,14 +1,15 @@
 html{
     box-sizing: border-box;
+    background-color: #6b705c;
 }
 .background {
-    background-color:aquamarine;
+    background-color:#6b705c;
     height: 70vh;
     padding: 1em 3em 1em 3em;
 }
 .container {
     
-    background-color: bisque;
+    background-color: #606f49;
     padding: 1em 1em 0em 2em;
     border: 5px;
     border-color: black;
@@ -20,13 +21,14 @@ h1{
     border-style: solid;
     border-radius: 20px;
     padding-left: 1%;
+    background-color: #c2d5aa;
 }
 
 h2 {
     margin:0;
 }
 .question {
-    background-color: aqua;
+    background-color: #c2d5aa;
     margin: 0.5em 1em 1em 1em;
     height: 40%;
     border-radius: 20px;
@@ -34,7 +36,7 @@ h2 {
 }
 
 .answer {
-    background-color: blueviolet;
+    background-color: #c2d5aa;
     margin: 2em 1em 3em 1em;
     height: 20%;
     padding: 1em 25% 1em 25%;
